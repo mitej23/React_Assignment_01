@@ -21,6 +21,10 @@
       "error",
       "always-multiline"
     ],
+    "linebreak-style": [
+      "error", 
+      "windows"
+    ],
     "consistent-return": "error",
     "curly": ["error", "all"],
     "indent": [0, 2, { "SwitchCase": 1}],

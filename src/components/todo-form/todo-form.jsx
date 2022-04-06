@@ -8,7 +8,11 @@ export const TodoForm = () => {
 
   const handleAddTodo = () => {
     // Fin an ability to add new task
-    setTodos([...todos, { id: todos.length, label: task, checked: false }]);
+    setTodos([...todos, {
+      id: todos.length === 0 ? 0 : todos[todos.length - 1].id + 1,
+      label: task,
+      checked: false,
+    }]);
     setTask('');
   };
 
